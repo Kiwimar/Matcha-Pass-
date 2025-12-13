@@ -1,0 +1,42 @@
+.page { border: 2px dashed red; }
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./fonts/my\ game.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Page centering */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #C2DAC4;
+  font-family: "MyFont", sans-serif;
+  line-height: 1.8;
+}
+
+/* Centered content box */
+.page {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+/* Text */
+h1 {
+  color: #405244;
+  text-align: center;
+}
+
+p {
+  color: #238b45 ;
+  overflow-wrap: break-word;
+  letter-spacing: 2px;
+}
