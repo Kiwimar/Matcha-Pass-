@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Tabular";
-  src: url("./fonts/Tabular-Variable.woff") format("woff");
+  src: url("./fonts/game_over.ttf") format("truetype");
   font-weight: 100 900; /* variable font range */
   font-style: normal;
 }
