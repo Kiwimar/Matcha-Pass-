@@ -1,20 +1,28 @@
 .page { border: 2px dashed red; }
 
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
 @font-face {
-  font-family: "MyFont";
-  src: url("./fonts/my\ game.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Tabular";
+  src: url("./fonts/Tabular-Variable.woff") format("woff");
+  font-weight: 100 900; /* variable font range */
   font-style: normal;
 }
 
+
+
 /* Page centering */
 body {
-  margin: 0;
+  margin: 10;
   min-height: 100vh;
   display: grid;
   place-items: center;
   background-color: #C2DAC4;
-  font-family: "MyFont", sans-serif;
+  font-family: "Tabular", system-ui, sans-serif;
   line-height: 1.8;
 }
 
@@ -25,7 +33,7 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
 }
 
@@ -39,4 +47,8 @@ p {
   color: #238b45 ;
   overflow-wrap: break-word;
   letter-spacing: 2px;
+}
+
+h2{
+  color: white;
 }
